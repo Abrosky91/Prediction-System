@@ -1,0 +1,6 @@
+for symptom in symptoms:
+            symp.append(symptoms_dict[symptom])
+
+        input_vector[symp] = 1
+
+        return jsonify({"data": loaded_model.predict([input_vector])[0]})
